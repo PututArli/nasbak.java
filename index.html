@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nasbak.Java — Nasi Bakar Daun Pisang, Area Unila</title>
+  <meta name="description" content="Nasbak.Java: nasi bakar dibungkus daun pisang, dibakar di atas arang. Untuk mahasiswa dan pekerja di sekitar Universitas Lampung. Pesan satuan atau katering lewat WhatsApp.">
+  <meta name="theme-color" content="#1f3a2b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip" href="#menu">Langsung ke menu</a>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="brand" id="nav-brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Nasbak<span class="brand-dot">.</span>Java
+    </a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="#menu" id="nav-menu">Menu</a>
+      <a href="#cara" id="nav-cara">Cara Pesan</a>
+      <a href="#katering" id="nav-katering">Katering</a>
+    </nav>
+    <button class="cart-btn" id="cart-open" aria-label="Buka pesanan">
+      <span>Pesanan</span>
+      <span class="cart-count" id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow reveal">Warung kecil · Sekitar Universitas Lampung</p>
+        <h1 class="hero-title reveal">
+          Dibakar,<br>
+          <em>bukan</em> digoreng.
+        </h1>
+        <p class="hero-lede reveal">
+          Nasi berbumbu rempah dibungkus daun pisang, lalu dibakar di atas arang sampai wanginya keluar.
+          Cukup buka daunnya dan makan. Pas buat di sela kelas, rapat, atau lembur.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#menu" class="btn btn-ink" id="hero-order">Lihat menu</a>
+          <a href="#katering" class="btn btn-line" id="hero-catering">Pesan untuk acara</a>
+        </div>
+        <dl class="hero-facts reveal">
+          <div><dt>Mulai</dt><dd>Rp 10rb</dd></div>
+          <div><dt>Varian</dt><dd>6 isian</dd></div>
+          <div><dt>Katering</dt><dd>50+ porsi</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="leaf" id="leaf">
+          <svg viewBox="0 0 400 400" class="leaf-svg">
+            <defs>
+              <pattern id="veins" width="14" height="400" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+                <line x1="0" y1="0" x2="0" y2="400" stroke="rgba(255,255,255,.08)" stroke-width="2"/>
+              </pattern>
+            </defs>
+            <rect x="60" y="80" width="280" height="240" rx="26" fill="#2f5a3f"/>
+            <rect x="60" y="80" width="280" height="240" rx="26" fill="url(#veins)"/>
+            <path d="M60 150 Q200 120 340 150" stroke="#1f3a2b" stroke-width="3" fill="none" opacity=".5"/>
+            <path d="M60 250 Q200 280 340 250" stroke="#1f3a2b" stroke-width="3" fill="none" opacity=".5"/>
+            <g class="char">
+              <ellipse cx="140" cy="130" rx="40" ry="10" fill="#1a1a14" opacity=".55"/>
+              <ellipse cx="270" cy="270" rx="50" ry="12" fill="#1a1a14" opacity=".5"/>
+              <ellipse cx="230" cy="160" rx="22" ry="7" fill="#1a1a14" opacity=".4"/>
+            </g>
+            <rect x="188" y="70" width="24" height="260" rx="4" fill="#c9a66b"/>
+            <rect x="188" y="70" width="24" height="260" rx="4" fill="none" stroke="#8a6d3b" stroke-width="2"/>
+          </svg>
+          <div class="smoke"><span></span><span></span><span></span></div>
+        </div>
+        <div class="stamp" id="stamp">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+            <text><textPath href="#circ">DIBAKAR DI ARANG · TANPA SENDOK · </textPath></text>
+          </svg>
+          <b>Fresh<br>tiap pagi</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRIP -->
+    <div class="strip" aria-hidden="true">
+      <div class="strip-track">
+        <span>Ayam suwir</span><i>✕</i><span>Tempe orek</span><i>✕</i><span>Ikan tongkol</span><i>✕</i><span>Keju kornet</span><i>✕</i><span>Cumi hitam</span><i>✕</i><span>Jamur tiram</span><i>✕</i>
+        <span>Ayam suwir</span><i>✕</i><span>Tempe orek</span><i>✕</i><span>Ikan tongkol</span><i>✕</i><span>Keju kornet</span><i>✕</i><span>Cumi hitam</span><i>✕</i><span>Jamur tiram</span><i>✕</i>
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <section class="section" id="menu">
+      <div class="section-head">
+        <span class="section-no">01</span>
+        <h2 class="section-title">Papan menu</h2>
+        <p class="section-sub">Semua harga per bungkus. Tekan <kbd>+</kbd> untuk menambah ke pesanan.</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filter isian">
+        <button class="chip is-on" data-filter="all" id="f-all" role="tab">Semua</button>
+        <button class="chip" data-filter="darat" id="f-darat" role="tab">Darat</button>
+        <button class="chip" data-filter="laut" id="f-laut" role="tab">Laut</button>
+        <button class="chip" data-filter="nabati" id="f-nabati" role="tab">Nabati</button>
+      </div>
+
+      <ol class="board" id="board"></ol>
+    </section>
+
+    <!-- HOW -->
+    <section class="section section-dark" id="cara">
+      <div class="section-head">
+        <span class="section-no">02</span>
+        <h2 class="section-title">Cara pesan</h2>
+        <p class="section-sub">Tanpa akun, tanpa aplikasi. Pesanan masuk lewat WhatsApp.</p>
+      </div>
+      <ol class="steps">
+        <li class="reveal">
+          <span class="step-n">i.</span>
+          <h3>Pilih isian</h3>
+          <p>Tambahkan satu atau beberapa varian dari papan menu. Jumlahnya bisa diatur langsung.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-n">ii.</span>
+          <h3>Isi nama &amp; catatan</h3>
+          <p>Contoh: tidak pedas, diambil jam 12, atau diantar ke gedung fakultas tertentu.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-n">iii.</span>
+          <h3>Kirim via WhatsApp</h3>
+          <p>Rincian pesanan tersusun otomatis. Kami balas untuk konfirmasi waktu dan pembayaran.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CATERING -->
+    <section class="section catering" id="katering">
+      <div class="catering-card reveal">
+        <div>
+          <span class="section-no">03</span>
+          <h2 class="section-title">Untuk acara,<br>rapat &amp; kepanitiaan.</h2>
+          <p>Mulai 50 porsi, boleh campur varian. Praktis dibagikan karena tidak butuh piring dan sendok, dan sampahnya cuma daun.</p>
+          <ul class="ticks">
+            <li>Bisa campur beberapa varian</li>
+            <li>Pesan minimal H-1</li>
+            <li>Harga khusus, tanya langsung</li>
+          </ul>
+        </div>
+        <button class="btn btn-ember" id="catering-btn">Mulai pesanan katering</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="foot-brand">Nasbak<span class="brand-dot">.</span>Java</div>
+    <p>Nasi bakar daun pisang · Bandar Lampung</p>
+    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" id="foot-wa">WhatsApp 0812-3456-7890</a>
+  </footer>
+
+  <!-- Floating mini cart (mobile) -->
+  <button class="dock" id="dock" aria-label="Lihat pesanan">
+    <span id="dock-qty">0 bungkus</span>
+    <strong id="dock-total">Rp 0</strong>
+    <span class="dock-go">Lanjut →</span>
+  </button>
+
+  <!-- DRAWER -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Pesanan Anda" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Pesanan Anda</h2>
+      <button class="x" id="cart-close" aria-label="Tutup">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="receipt">
+        <div class="receipt-top">
+          <b>NASBAK.JAVA</b>
+          <span id="r-date"></span>
+        </div>
+        <ul class="r-items" id="r-items"></ul>
+        <p class="r-empty" id="r-empty">Belum ada yang dipilih.<br><a href="#menu" id="r-empty-link">Buka papan menu →</a></p>
+        <div class="r-total"><span>TOTAL</span><strong id="r-total">Rp 0</strong></div>
+        <div class="receipt-zig" aria-hidden="true"></div>
+      </div>
+
+      <form class="order-form" id="order-form" novalidate>
+        <fieldset class="seg">
+          <legend>Jenis pesanan</legend>
+          <label><input type="radio" name="otype" value="Satuan" checked id="t-satuan"><span>Satuan <small>1–49</small></span></label>
+          <label><input type="radio" name="otype" value="Katering" id="t-katering"><span>Katering <small>50+</small></span></label>
+        </fieldset>
+        <p class="hint" id="type-hint"></p>
+
+        <label class="field">
+          <span>Nama</span>
+          <input type="text" id="f-name" autocomplete="name" placeholder="Nama pemesan">
+          <em class="err" id="name-err">Nama perlu diisi agar kami tahu pesanan siapa.</em>
+        </label>
+
+        <label class="field">
+          <span>Catatan <small>(opsional)</small></span>
+          <textarea id="f-note" rows="2" placeholder="Tidak pedas, jam ambil, lokasi antar…"></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-wa" id="btn-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Kirim lewat WhatsApp
+        </button>
+      </form>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
